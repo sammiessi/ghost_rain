@@ -1,0 +1,84 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  background-color: rgb(41, 41, 41);
+  color: rgb(137, 137, 137);
+  font-size: 35px;
+  font-family: "Rubik Bubbles", cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.life {
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+.life i {
+  color: rgb(217, 23, 101);
+  font-size: 35px;
+}
+
+#bg {
+  position: relative; /*의미는 없지만! 부모 위치 for #hero position: absolute*/
+  width: 800px;
+  height: 600px;
+  background: url("./images/bg.png") no-repeat;
+  background-size: cover;
+  margin: 10px auto;
+}
+
+#hero {
+  position: absolute;
+  bottom: 0;
+  left: 50%; /*div 기준으로 가운데이기 때문에 완벽하진 X*/
+  /* margin-left: -17.5px; 때문에 미세하게 조정 */
+  width: 35px;
+  height: 54px;
+  background: url("./images/hero.png") no-repeat;
+}
+
+#hero.stop {
+  background-position: 0px 0px;
+}
+
+#hero.right {
+  background-position: -105px 0px;
+}
+
+#hero.left {
+  background-position: -70px 0px;
+}
+
+.button {
+  width: 55%;
+  padding: 8px;
+  border-radius: 12px;
+  margin-top: 20px;
+  background-color: rgb(247, 80, 147);
+  color: whitesmoke;
+  border: 3px solid rgb(217, 23, 101);
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-family: "Rubik Bubbles", cursive;
+}
+
+.button:hover {
+  background-color: rgb(217, 23, 101);
+  color: rgb(253, 199, 208);
+  cursor: pointer;
+}
